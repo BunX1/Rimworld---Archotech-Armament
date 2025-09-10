@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Bullet Defs -->
+	<!-- Pistol Bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BunX_Bullet_Pistol</defName>
+		<label>Archotech pistol shot</label>
+		<graphicData>
+			<texPath>Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>0.5</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- SMG Bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BunX_Bullet_Smg</defName>
+		<label>Archotech SMG shot</label>
+		<graphicData>
+			<texPath>Projectile/Charge_Small</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.45</armorPenetrationBase>
+			<stoppingPower>0.35</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- Shotgun Bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BunX_Bullet_Shotgun</defName>
+		<label>Archotech Shotgun shot</label>
+		<graphicData>
+			<texPath>Projectile/Charge_Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Lmg Bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BunX_Bullet_LMG</defName>
+		<label>Archotech LMG shot</label>
+		<graphicData>
+			<texPath>Projectile/Charge_Lmg</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>0.9</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Sniper Bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BunX_Bullet_Sniper</defName>
+		<label>Archotech Sniper Bolt</label>
+		<graphicData>
+			<texPath>Projectile/Charge_Sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>1.0</armorPenetrationBase>
+			<stoppingPower>3.0</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+
+	<!-- Minigun Bullet -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>BunX_Bullet_Minigun</defName>
+		<label>Archotech Minigun shot</label>
+		<graphicData>
+			<texPath>Projectile/Charge_Minigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>9</damageAmountBase>
+			<armorPenetrationBase>0.3</armorPenetrationBase>
+			<stoppingPower>0.3</stoppingPower>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	
+	<!-- Weapon Defs -->
+	<!-- Archotech Pistol  -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>BunX_Gun_ArchotechPistol</defName>
+		<label>Archotech Pistol</label>
+		<description>Expertly engineered pistol utilizing pulse-charge technology in conjunction with Archotech material. An Archotech shard charges the bullet before exiting the barrel, dealing great blow to the target.
+This specific model exists as a high end defensive measure for high ranking individuals.</description>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>WeaponRanged/ArchotechPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>1.0</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.45</AccuracyLong>
+			<RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
+			<WorkToMake>20000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+			<BunX_ArchotechShard>1</BunX_ArchotechShard>
+		</costList>
+		<weaponTags>
+			<li>ArchotechGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BunX_Bullet_Pistol</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<minRange>0.5</minRange>
+				<range>27.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>BunX_Light_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>4</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- Archotech SMG  -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>BunX_Gun_ArchotechSMG</defName>
+		<label>Archotech SMG</label>
+		<description>Fast response weapon utilizing pulse-charge technology in conjunction with Archotech material. An Archotech shard charges the bullet before exiting the barrel, dealing great blow to the target.
+This specific model acts as a quick response measure for royal military against threats.</description>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>WeaponRanged/ArchotechSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+			<WorkToMake>22000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>125</Plasteel>
+			<ComponentSpacer>3</ComponentSpacer>
+			<BunX_ArchotechShard>1</BunX_ArchotechShard>
+		</costList>
+		<weaponTags>
+			<li>ArchotechGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BunX_Bullet_Smg</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<minRange>1.5</minRange>
+				<range>25.9</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>BunX_Light_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- Archotech Shotgun  -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>BunX_Gun_ArchotechShotgun</defName>
+		<label>Archotech Shotgun</label>
+		<description>Beast of close quarter combat. Equipped with special Hollow-point Tungston Slugs, Pulse-Charge technology ensures smooth and reliable use against the strongest beasts on the Rim.
+This model was designed for use in enclosed enviroments and against beastly creatures.</description>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>WeaponRanged/ArchotechShotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>1.0</AccuracyTouch>
+			<AccuracyShort>1.0</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.85</RangedWeapon_Cooldown>
+			<WorkToMake>30000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>150</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<BunX_ArchotechShard>2</BunX_ArchotechShard>
+		</costList>
+		<weaponTags>
+			<li>ArchotechGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BunX_Bullet_Shotgun</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<minRange>0</minRange>
+				<range>16.9</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>BunX_Medium_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- Archotech Sniper Rifle -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>BunX_Gun_ArchotechSniperrifle</defName>
+		<label>Archotech Sniper Rifle</label>
+		<description>Deadliest class of weapon, the sniper rifle utilizes special Armor Piercing explosive bolts. Upon impact the bolts shoot out a piercing load of implosive psychically charged material causing damage on scale of Antimatter weapons.
+The Sniper rifle was designed as a long distance "target pick off" weapon, not suitable for active battlefield due to it's excessive cooldown period between shots.</description>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>WeaponRanged/ArchotechRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>0.8</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>1.0</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<WorkToMake>35000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>200</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<BunX_ArchotechShard>3</BunX_ArchotechShard>
+		</costList>
+		<weaponTags>
+			<li>ArchotechGun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BunX_Bullet_Sniper</defaultProjectile>
+				<warmupTime>2.2</warmupTime>
+				<minRange>5.5</minRange>
+				<range>49.9</range>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>BunX_Heavy_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- Archotech LMG -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>BunX_Gun_ArchotechLMG</defName>
+		<label>Archotech LMG</label>
+		<description>Modenized Replacement to the LMG and Charge Rifle. Utilizing dual barrels to compensate for it's cooldown to remain in optimal shape while in use.
+Due to oversight of barrel overheating issues with Sniper rifle model, the LMG has been outfitted with a second barrel to switch to on each each shot to prevent degradation. It's designers dubbed it "baby's first machinegun"  due to it's similiarity with industrial miniguns.</description>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>WeaponRanged/ArchotechLMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<WorkToMake>42000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>200</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+			<BunX_ArchotechShard>2</BunX_ArchotechShard>
+		</costList>
+		<weaponTags>
+			<li>ArchotechGun</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.50</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BunX_Bullet_LMG</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>29.9</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>15</burstShotCount>
+				<soundCast>BunX_Medium_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<!-- Archotech Minigun -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>BunX_Gun_ArchotechMinigun</defName>
+		<label>Archotech Minigun</label>
+		<description>Pinacle of destructive power, multibarrel terror on the battlefield.
+Designed to destroy.</description>
+		<techLevel>Archotech</techLevel>
+		<graphicData>
+			<texPath>WeaponRanged/ArchotechMinigun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_SMG</soundInteract>
+		<statBases>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>0.9</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<WorkToMake>42000</WorkToMake>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>350</Plasteel>
+			<ComponentSpacer>8</ComponentSpacer>
+			<BunX_ArchotechShard>3</BunX_ArchotechShard>
+		</costList>
+		<weaponTags>
+			<li>ArchotechGun</li>
+		</weaponTags>
+		<equippedStatOffsets>
+			<MoveSpeed>-1.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>BunX_Bullet_Minigun</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>33.9</range>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<burstShotCount>40</burstShotCount>
+				<soundCast>BunX_Medium_Shot</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+</Defs>

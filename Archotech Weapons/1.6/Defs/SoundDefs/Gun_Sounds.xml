@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>BunX_Light_Shot</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>gunshot/Shot_ChargeLight</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20.70111</min>
+					<max>47.30627</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9976015</min>
+					<max>1.1769372</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BunX_Medium_Shot</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>gunshot/Shot_ChargePunch</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20.70111</min>
+					<max>47.30627</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9976015</min>
+					<max>1.1769372</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>BunX_Heavy_Shot</defName>
+		<context>MapOnly</context>
+		<eventNames/>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>gunshot/Shot_ChargePower</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>20.70111</min>
+					<max>47.30627</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9976015</min>
+					<max>1.1769372</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

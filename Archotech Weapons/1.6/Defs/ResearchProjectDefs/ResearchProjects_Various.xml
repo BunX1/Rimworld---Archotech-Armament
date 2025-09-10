@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>BunX_Archotech</defName>
+		<label>Archotech Mastery</label>
+		<description>Test</description>
+		<baseCost>15000</baseCost>
+		<tab>VanillaExpanded</tab>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>AdvancedFabrication</li>
+			<li>ChargedShot</li>
+			<li>GasOperation</li>
+			<li>PrecisionRifling</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>1.00</researchViewY>
+	</ResearchProjectDef>
+</Defs>

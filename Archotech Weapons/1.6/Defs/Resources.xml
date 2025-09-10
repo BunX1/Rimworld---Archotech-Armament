@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Archotech Shards -->
+	<ThingDef ParentName="ResourceBase">
+		<defName>BunX_ArchotechShard</defName>
+		<label>Archotech Shard</label>
+		<description>A Fractured Shard of a bygone era of Archotech Super Intelligence. It resonates with unstable energy, emitting psychic properties, although this shard appears to be stable.
+
+Shards of Archotech residue are incredibly rare artifacts, obtained from Quests and Trading Caravans, or rarely found within Abandoned structures.
+A skilled enough craftsman can extract a useable piece from remenant artifacts, at the cost of their functionality.
+
+Throughout research, new possibilites open in regards to it's near limitless power. A sufficiently competent weaponsmith might be able to create new terifying weapons.</description>
+		<graphicData>
+			<texPath>Shard</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>5</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<useHitPoints>false</useHitPoints>
+		<tradeTags>
+			<li>UtilitySpecial</li>
+			<li>Exotic</li>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>2000</MarketValue>
+			<Mass>1.5</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+		    <li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+
+	<!-- Shard Recipe Single item-->
+	<RecipeDef>
+		<defName>BunX_MakeShardSimple</defName>
+		<label>Extract a Archotech Shard</label>
+		<description>Extracts useable Archotech material from psychically atuned Artifacts.</description>
+		<jobString>Extracting Archotech Shard.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>10000</workAmount>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AIPersonaCore</li>
+						<li>TechprofSubpersonaCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AIPersonaCore</li>
+				<li>TechprofSubpersonaCore</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BunX_ArchotechShard>1</BunX_ArchotechShard>
+		</products>
+		<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+	<!-- Shard Recipe Multi item-->
+	<RecipeDef>
+		<defName>BunX_MakeShardAdvanced</defName>
+		<label>Create a Archotech Shard</label>
+		<description>Extracts useable Archotech material from other artifacts to form a new Shard.</description>
+		<jobString>Forming a new Archotech Shard.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>10000</workAmount>
+		<recipeUsers>
+			<li>FabricationBench</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PsychicSoothePulser</li>
+						<li>ShardAnimalPulser</li>
+						<li>PsychicAnimalPulser</li>
+						<li>BiomutationPulser</li>
+						<li>Apparel_PsychicShockLance</li>
+						<li>Apparel_PsychicInsanityLance</li>
+						<li>Apparel_ShardPsychicShockLance</li>
+						<li>Apparel_ShardPsychicInsanityLance</li>
+						<li>Apparel_BiomutationLance</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PsychicSoothePulser</li>
+						<li>ShardAnimalPulser</li>
+						<li>PsychicAnimalPulser</li>
+						<li>BiomutationPulser</li>
+						<li>Apparel_PsychicShockLance</li>
+						<li>Apparel_PsychicInsanityLance</li>
+						<li>Apparel_ShardPsychicShockLance</li>
+						<li>Apparel_ShardPsychicInsanityLance</li>
+						<li>Apparel_BiomutationLance</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PsychicSoothePulser</li>
+				<li>ShardAnimalPulser</li>
+				<li>PsychicAnimalPulser</li>
+				<li>BiomutationPulser</li>
+				<li>Apparel_PsychicShockLance</li>
+				<li>Apparel_PsychicInsanityLance</li>
+				<li>Apparel_ShardPsychicShockLance</li>
+				<li>Apparel_ShardPsychicInsanityLance</li>
+				<li>Apparel_BiomutationLance</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<BunX_ArchotechShard>1</BunX_ArchotechShard>
+		</products>
+		<researchPrerequisite>BunX_Archotech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+</Defs>
