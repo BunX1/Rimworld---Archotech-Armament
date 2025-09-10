@@ -1,0 +1,10 @@
+V-1.1:
+- Uploaded to Github
+- Removed Patch.xml
+- Modified Archotech Shard -> <Thingsetmakertags> to include RewardStandardHighFreq + LowFreq. Resource now appears in Trading caravans and quests as intended.
+
+V-1.0:
+- Uploaded to steam workshop
+- Added Archotech -> Pistol, SMG, Shotgun, Sniper Rifle, LMG, Minigun
+- Added Archotech Shard resource, with coresponding recipemakers
+- Added AI generated Patch.xml to allow Archotech Shards to appear in Quests and Trading Caravans
